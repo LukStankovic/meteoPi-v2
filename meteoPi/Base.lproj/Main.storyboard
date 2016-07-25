@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -111,7 +112,60 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="802" y="574"/>
+            <point key="canvasLocation" x="1006" y="416"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="ocb-BM-fgg">
+            <objects>
+                <viewController title="Dashboard" id="4Fh-y3-vrc" customClass="SouhrnViewController" customModule="meteoPi" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kBt-20-jTq"/>
+                        <viewControllerLayoutGuide type="bottom" id="cnU-Qe-ygJ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Cml-QC-YhF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhu-iX-vAa">
+                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
+                                <color key="barTintColor" red="0.074509803920000006" green="0.56470588239999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="meteoPi" id="wNK-kh-ZCD"/>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xXb-lH-1Mx">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                                <color key="backgroundColor" red="0.074509803920000006" green="0.56470588239999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OXe-3V-YxH">
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xhu-iX-vAa" firstAttribute="centerX" secondItem="Cml-QC-YhF" secondAttribute="centerX" id="2VW-LZ-X5B"/>
+                            <constraint firstItem="OXe-3V-YxH" firstAttribute="width" secondItem="Cml-QC-YhF" secondAttribute="width" id="oaV-AJ-cNe"/>
+                            <constraint firstItem="OXe-3V-YxH" firstAttribute="width" secondItem="Cml-QC-YhF" secondAttribute="height" multiplier="1:1" id="xGm-5j-ffv"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Souhrn" image="Souhrn" id="RGd-DE-QXb"/>
+                    <connections>
+                        <outlet property="webViewSouhrn" destination="OXe-3V-YxH" id="PTr-l9-7Is"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xb7-xz-dLu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="HBn-p4-2mm">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.074509803920000006" green="0.56470588239999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-308" y="1085"/>
         </scene>
         <!--Historické-->
         <scene sceneID="7Ze-sG-Psc">
@@ -150,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JaL-Dd-KBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-39" y="1036"/>
+            <point key="canvasLocation" x="701" y="1162"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -166,16 +220,18 @@
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="QzD-Cz-1Vf" kind="relationship" relationship="viewControllers" id="JH5-TJ-YRh"/>
+                        <segue destination="4Fh-y3-vrc" kind="relationship" relationship="viewControllers" id="TGa-iV-sOg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-164" y="60"/>
+            <point key="canvasLocation" x="-134" y="170"/>
         </scene>
     </scenes>
     <resources>
         <image name="Chart" width="25" height="21"/>
         <image name="Denní" width="27" height="24"/>
         <image name="Historické" width="24" height="24"/>
+        <image name="Souhrn" width="27" height="22"/>
     </resources>
 </document>
