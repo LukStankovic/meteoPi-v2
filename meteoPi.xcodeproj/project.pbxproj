@@ -11,9 +11,9 @@
 		07121C881D462248001B7319 /* GrafViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07121C871D462248001B7319 /* GrafViewController.swift */; };
 		07121C8A1D462248001B7319 /* DenniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07121C891D462248001B7319 /* DenniViewController.swift */; };
 		07121C8D1D462249001B7319 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07121C8B1D462249001B7319 /* Main.storyboard */; };
-		07121C8F1D462249001B7319 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07121C8E1D462249001B7319 /* Assets.xcassets */; };
 		07121C921D462249001B7319 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07121C901D462249001B7319 /* LaunchScreen.storyboard */; };
 		07121C9A1D4625FA001B7319 /* HistorickeViewControler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07121C991D4625FA001B7319 /* HistorickeViewControler.swift */; };
+		07DB08501D46310D009B8BD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07DB084F1D46310D009B8BD6 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +22,10 @@
 		07121C871D462248001B7319 /* GrafViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrafViewController.swift; sourceTree = "<group>"; };
 		07121C891D462248001B7319 /* DenniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenniViewController.swift; sourceTree = "<group>"; };
 		07121C8C1D462249001B7319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		07121C8E1D462249001B7319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07121C911D462249001B7319 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07121C931D462249001B7319 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		07121C991D4625FA001B7319 /* HistorickeViewControler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistorickeViewControler.swift; sourceTree = "<group>"; };
+		07DB084F1D46310D009B8BD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,12 +58,12 @@
 		07121C841D462248001B7319 /* meteoPi */ = {
 			isa = PBXGroup;
 			children = (
+				07DB084F1D46310D009B8BD6 /* Assets.xcassets */,
 				07121C851D462248001B7319 /* AppDelegate.swift */,
 				07121C871D462248001B7319 /* GrafViewController.swift */,
 				07121C891D462248001B7319 /* DenniViewController.swift */,
 				07121C991D4625FA001B7319 /* HistorickeViewControler.swift */,
 				07121C8B1D462249001B7319 /* Main.storyboard */,
-				07121C8E1D462249001B7319 /* Assets.xcassets */,
 				07121C901D462249001B7319 /* LaunchScreen.storyboard */,
 				07121C931D462249001B7319 /* Info.plist */,
 			);
@@ -102,6 +102,7 @@
 				TargetAttributes = {
 					07121C811D462248001B7319 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = DSEHBKSB68;
 					};
 				};
 			};
@@ -129,7 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07121C921D462249001B7319 /* LaunchScreen.storyboard in Resources */,
-				07121C8F1D462249001B7319 /* Assets.xcassets in Resources */,
+				07DB08501D46310D009B8BD6 /* Assets.xcassets in Resources */,
 				07121C8D1D462249001B7319 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,9 +260,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = meteoPi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lukstankovic.meteoPi;
+				PRODUCT_BUNDLE_IDENTIFIER = lukstankovic.meteoPi.new;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -270,9 +272,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = meteoPi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = lukstankovic.meteoPi;
+				PRODUCT_BUNDLE_IDENTIFIER = lukstankovic.meteoPi.new;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -296,6 +299,7 @@
 				07121C981D462249001B7319 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
