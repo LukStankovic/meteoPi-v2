@@ -10,6 +10,7 @@ import UIKit
 
 class GrafViewController: UIViewController {
 
+
     @IBOutlet var webView: UIWebView!
     
     override func viewDidLoad() {
