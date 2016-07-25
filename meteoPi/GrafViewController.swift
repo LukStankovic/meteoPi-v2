@@ -14,16 +14,17 @@ class GrafViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         let htmlString:String! = "<iframe width='1200' height='708' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/1E-ElrybFLzFDbhbJryf5kbKQk6J29jDipateSb64Tvs/pubchart?oid=1100784856&amp;format=interactive'></iframe>"
         
         /* let url = NSURL (string: "http://meteopi.stankoviclukas.cz");
          let requestObj = NSURLRequest(URL: url!);
          webView.loadRequest(requestObj);*/
-        
+    
         self.webView.frame = self.view.bounds
         self.webView.scalesPageToFit = true
-        
+ 
         webView.loadHTMLString(htmlString, baseURL: nil)
     }
 
