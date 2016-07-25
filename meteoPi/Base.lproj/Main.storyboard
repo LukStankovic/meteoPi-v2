@@ -39,6 +39,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Posledních 24h" image="first" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="webView" destination="uKs-Nk-qSr" id="j9y-5c-cxJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
