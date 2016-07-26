@@ -21,7 +21,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mzc-oc-L5J">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.074509803920000006" green="0.56470588239999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
@@ -31,7 +31,7 @@
                             </navigationBar>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qlX-A4-z0Q">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
-                                <color key="backgroundColor" red="0.074509803920000006" green="0.56470588239999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mKy-eL-mmW">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
@@ -52,7 +52,13 @@
                             <constraint firstItem="Mzc-oc-L5J" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="bfI-0f-z49"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Graf teploty" image="Chart" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Graf teploty" image="Chart" id="acW-dT-cKf">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.78823529411764703" green="0.047058823529411764" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <connections>
                         <outlet property="webView" destination="Ejk-bQ-EgD" id="n3q-Ay-F8R"/>
                     </connections>
@@ -75,7 +81,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fBz-bR-74I">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.074509803920000006" green="0.56470588239999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
@@ -85,7 +91,7 @@
                             </navigationBar>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jbh-jt-jQd">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
-                                <color key="backgroundColor" red="0.074509803920000006" green="0.56470588239999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Současná teplota" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
                                 <rect key="frame" x="20" y="75" width="279" height="42"/>
@@ -108,7 +114,13 @@
                             <constraint firstItem="fBz-bR-74I" firstAttribute="centerX" secondItem="QS5-Rx-YEW" secondAttribute="centerX" id="xmR-hp-kkC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Denní" image="Denní" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Denní" image="Denní" id="cPa-gy-q4n">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.78823529411764703" green="0.047058823529411764" blue="0.24313725490196078" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -128,7 +140,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhu-iX-vAa">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.074509803920000006" green="0.56470588239999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
@@ -138,7 +150,7 @@
                             </navigationBar>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xXb-lH-1Mx">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
-                                <color key="backgroundColor" red="0.074509803920000006" green="0.56470588239999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OXe-3V-YxH">
                                 <rect key="frame" x="0.0" y="64" width="600" height="487"/>
@@ -153,7 +165,13 @@
                             <constraint firstItem="OXe-3V-YxH" firstAttribute="width" secondItem="Cml-QC-YhF" secondAttribute="height" multiplier="1:1" id="xGm-5j-ffv"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Souhrn" image="Souhrn" id="RGd-DE-QXb"/>
+                    <tabBarItem key="tabBarItem" title="Souhrn" image="Souhrn" id="RGd-DE-QXb">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <connections>
                         <outlet property="webViewSouhrn" destination="OXe-3V-YxH" id="PTr-l9-7Is"/>
                     </connections>
@@ -181,7 +199,7 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gle-X3-aUG">
                                 <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <color key="barTintColor" red="0.074509803920000006" green="0.56470588239999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="barTintColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </textAttributes>
@@ -191,7 +209,8 @@
                             </navigationBar>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iFf-lu-BtF">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
-                                <color key="backgroundColor" red="0.074509803920000006" green="0.56470588239999997" blue="0.98431372549999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -199,7 +218,13 @@
                             <constraint firstItem="Gle-X3-aUG" firstAttribute="centerX" secondItem="mFR-e0-fhn" secondAttribute="centerX" id="vkd-0s-r5s"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Historické" image="Historické" id="OsB-Em-b55"/>
+                    <tabBarItem key="tabBarItem" title="Historické" image="Historické" id="OsB-Em-b55">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JaL-Dd-KBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
