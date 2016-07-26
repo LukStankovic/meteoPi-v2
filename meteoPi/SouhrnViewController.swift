@@ -12,6 +12,11 @@ class SouhrnViewController: UIViewController {
 
     @IBOutlet var webViewSouhrn: UIWebView!
     
+    @IBAction func refreshWebView(sender: UIButton) {
+        let htmlString:String! = "<iframe style='width: 100%; height: 100%' seamless frameborder='0' scrolling='no' src='https://docs.google.com/spreadsheets/d/1E-ElrybFLzFDbhbJryf5kbKQk6J29jDipateSb64Tvs/pubhtml?gid=191496846&amp;single=true&amp;widget=true&amp;headers=false'></iframe>"
+        webViewSouhrn.loadHTMLString(htmlString, baseURL: nil)
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -33,23 +33,37 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="20"/>
                                 <color key="backgroundColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mKy-eL-mmW">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
-                            </webView>
                             <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ejk-bQ-EgD">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="147" width="600" height="404"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="487" id="kbd-Sf-ebX"/>
                                 </constraints>
                             </webView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8P-Ht-MRv">
+                                <rect key="frame" x="20" y="112" width="106" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Načíst znova">
+                                    <color key="titleColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshWebView:" destination="9pv-A4-QxB" eventType="touchUpInside" id="xMD-21-5H0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Graf teploty za posledních 24 hodin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8d-RT-pC8">
+                                <rect key="frame" x="20" y="83" width="273" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ejk-bQ-EgD" firstAttribute="centerX" secondItem="qlX-A4-z0Q" secondAttribute="centerX" id="KWk-Gg-L74"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="b8P-Ht-MRv" secondAttribute="leading" id="axY-If-MX1"/>
                             <constraint firstItem="Mzc-oc-L5J" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="bfI-0f-z49"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="c8d-RT-pC8" secondAttribute="leading" id="hVO-gv-dzs"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Graf teploty" image="Chart" id="acW-dT-cKf">
@@ -153,10 +167,27 @@
                                 <color key="backgroundColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <webView contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OXe-3V-YxH">
-                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
+                                <rect key="frame" x="0.0" y="126" width="600" height="425"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Dashboard" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sgi-YQ-hwU">
+                                <rect key="frame" x="20" y="70" width="273" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <color key="textColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fki-i5-bxr">
+                                <rect key="frame" x="11" y="99" width="106" height="27"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Načíst znova">
+                                    <color key="titleColor" red="0.78823529410000004" green="0.047058823530000002" blue="0.24313725489999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="refreshWebView:" destination="9pv-A4-QxB" eventType="touchUpInside" id="3rd-VU-qFi"/>
+                                    <action selector="refreshWebView:" destination="4Fh-y3-vrc" eventType="touchUpInside" id="MjH-Dq-AUj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
